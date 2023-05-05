@@ -8,8 +8,21 @@
     letter-spacing: .1em;
     font-weight: 600;
 }
+.search__input-label {
+    height: 40px;
+    /* other styles */
+  }
 .search__input-icon{
-    background-color: #6a555f;
-    height: 98.5%;
+    background-color: #967b88;
+    min-height: 80.5%;
     color: #ffffff;
+}
+
+.search-reset{
+    height: 2em;
+    margin-left: .3em;
+    margin-top: .2em;
+    background-color: #967b88;
+    color: #ffffff;
+
 }

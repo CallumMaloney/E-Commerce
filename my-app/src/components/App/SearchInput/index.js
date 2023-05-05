@@ -17,7 +17,7 @@ function SearchInput({ inputValue, setInputValue, handleResetClick }) {
 
   return (
     <div className="search">
-      <label htmlFor="si" className="searchs">
+      <label htmlFor="si" className="search__input-label">
         <SearchIcon className="search__input-icon" />
       </label>
       <input
