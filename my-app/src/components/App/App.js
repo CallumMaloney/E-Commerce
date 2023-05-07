@@ -14,6 +14,11 @@ function App() {
   const [shoppingCounter, setShoppingCounter] = useState(0);
   const [shoppingCartItems , setShoppingCartItems] = useState({});
 
+  useEffect(() => {
+
+    document.title = `GorillE-Store`;
+
+  })
 
 
   useEffect(() => {
