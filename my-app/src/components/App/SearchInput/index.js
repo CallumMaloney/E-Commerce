@@ -28,7 +28,7 @@ function SearchInput({ inputValue, setInputValue, handleResetClick }) {
         onChange={handleInput}
         ref={inputRef}
       />
-      <button className="search-reset" onClick={handleReset}>Reset</button>
+      <button className="search-reset" onClick={handleReset}>X</button>
     </div>
   )
 }

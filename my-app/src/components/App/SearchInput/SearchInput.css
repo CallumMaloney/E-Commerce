@@ -2,14 +2,20 @@
     display: flex;
 }
 .search__input{
-    border: 5px solid #6a555f;
+    border: 5px solid #967b88;
     height: 1.5em;
     text-align: center;
     letter-spacing: .1em;
     font-weight: 600;
 }
 .search__input-label {
-    height: 40px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent;
+    background-color: #967b88;
+    border-radius: 10px 0 0 10px;
+   
     /* other styles */
   }
 .search__input-icon{
@@ -19,10 +25,14 @@
 }
 
 .search-reset{
-    height: 2em;
-    margin-left: .3em;
-    margin-top: .2em;
+    height: 2.4em;
     background-color: #967b88;
     color: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
 
+}
+.search-reset:hover{
+    border: 3px solid #6a555f;
 }

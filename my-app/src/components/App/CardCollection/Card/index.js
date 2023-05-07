@@ -1,8 +1,12 @@
 import React from "react";
 import "./Card.css";
 import Rating from '@mui/material/Rating';
+import { IconButton } from "@mui/material";
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import DoneIcon from '@mui/icons-material/Done';
 
-function Card({ category, title, imageSrc, rating, price }) { // destructuring props
+function Card({ category, title, imageSrc, rating, price, toggleCartItem, shoppingCartItems}) { // destructuring props
+  const isItemInCart = shoppingCartItems[title];
   return (
     <div className="card">
       <div className="card__category">
@@ -20,6 +24,15 @@ function Card({ category, title, imageSrc, rating, price }) { // destructuring p
       </div>
       <div className="card__price">
         <p>£{price}</p>
+      </div>
+      <div className="card__button">
+        <IconButton onClick={() => toggleCartItem(title)}>
+          {isItemInCart ? (
+            <DoneIcon className="card__button-icon added-to-cart" />
+          ) : (
+            <AddShoppingCartIcon className="card__button-icon" />
+          )}
+        </IconButton>
       </div>
     </div>
   );
