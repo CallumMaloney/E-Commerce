@@ -71,7 +71,7 @@ function App() {
         <div className="main__search">
           <SearchInput inputValue={inputValue} setInputValue = {setInputValue} handleResetClick={handleResetClick}/>
         </div>
-        <CardCollection myStoreData={myStoreData} setFilteredStoreData={setFilteredStoreData} inputValue={inputValue} toggleCartItem={toggleCartItem} shoppingCartItems={shoppingCartItems} />
+        <CardCollection myStoreData={myStoreData} setFilteredStoreData={setFilteredStoreData} inputValue={inputValue} filteredStoreData={filteredStoreData} toggleCartItem={toggleCartItem} shoppingCartItems={shoppingCartItems}  />
       </main>
     </div>
   );
